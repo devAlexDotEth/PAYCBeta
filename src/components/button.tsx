@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { CSSObject } from '@emotion/react';
 import Body from './body';
+import { ThirdwebSDK } from '@thirdweb-dev/sdk';
 
 type Props = {
   as?: any;

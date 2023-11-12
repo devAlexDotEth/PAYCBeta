@@ -1,8 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { CSSObject } from '@emotion/react';
 import Body from './body';
 import { ThirdwebSDK } from '@thirdweb-dev/sdk';
+import { ethers } from 'ethers';
 
 type Props = {
   as?: any;
@@ -18,7 +19,9 @@ type Props = {
   active?: boolean;
   onClick?: () => void;
   localStyles?: CSSObject;
-}
+  serumId?: number;
+  serumAmount?: number;
+};
 
 const El = styled.button(({ size = 'S', iconOnly = false, active, disabled, variant, localStyles }: Props) => ({
   display: 'flex',

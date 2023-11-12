@@ -103,7 +103,7 @@ export const Home: FC<{}> = () => {
               <AmountInput decrease={decreaseAmount} increase={increaseAmount} amount={serumAmount} />
               <Stack direction="HORIZONTAL" space={'var(--scale-12)'} localStyles={{justifyContent: 'center'}}>
                 <Button size='M' variant="SECONDARY" onClick={() => setIsRevealed(!isRevealed)} localStyles={{marginTop: 'var(--scale-8)'}}>Close</Button>
-                <Button size='M' variant="PRIMARY" onClick={() => {}} localStyles={{marginTop: 'var(--scale-8)'}}>$Sheesh</Button>
+                <Button size='M' variant="PRIMARY" onClick={() => {}} localStyles={{marginTop: 'var(--scale-8)'}}>$$Sheesh</Button>
               </Stack>
             </Dialog>}
 
